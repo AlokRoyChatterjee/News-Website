@@ -1,21 +1,18 @@
 
 
-const btnHam = document.querySelector('.ham-btn');
-const btnTimes = document.querySelector('.times-btn');
-const navBar = document.getElementById('nav-bar');
+const element = document.querySelector('element');
+const element2 = document.querySelector('element2');
 
-btnHam.addEventListener('click', function(){
+element.addEventListener('click', function(){
     if(btnHam.className !== ""){
-        btnHam.style.display = "none";
-        btnTimes.style.display = "block";
-        navBar.classList.add("show-nav");
+        element.style.display = "none";
+        element2.style.display = "block";
     }
 })
 
-btnTimes.addEventListener('click', function(){
+element2.addEventListener('click', function(){
     if(btnHam.className !== ""){
-        this.style.display = "none";
-        btnHam.style.display = "block";
-        navBar.classList.remove("show-nav");
+        element.style.display = "block";
+        element2.style.display = "none";
     }
 })
